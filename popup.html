@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                padding: 10px;
+                font-size: 14px;
+            }
+            button {
+                padding: 6px 12px;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            label, label * {
+                cursor: pointer;
+            }
+            .form-actions {
+                margin-top: 10px;
+                padding-top: 10px;
+                border-top: 1px solid #ddd;
+            }
+        </style>
+    </head>
+    <body style="width: 300px">
+        <form>
+            <label for="preset-default">
+                Default
+                <input type="radio" name="preset" value="default" id="preset-default" checked="checked">
+            </label>
+
+            <div class="form-actions">
+                <button id="changefont" type="button">Change font</button>
+                <button id="resetfont" type="button">Reset</button>
+            </div>
+        </form>
+
+        <script type="text/javascript" src="popup.js"></script>
+    </body>
+</html>
